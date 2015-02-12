@@ -1,0 +1,23 @@
+{
+    "name": "ksascomm/ksas_lab_intranet",
+    "type": "wordpress-theme",
+    "license": "GPL2",
+  	"description": "For non-department websites.  Does not include people functionality.",
+  	"homepage": "http://github.com/ksascomm/ksas_lab_intranet",
+  	"authors": [
+      {
+      "name": "Tim Gelles",
+      "email": "ksasweb@jhu.edu",
+      "homepage": "http://krieger.jhu.edu"
+      }
+    ],
+    "keywords": [
+      "wordpress"
+    ],
+  "support": {
+    "issues": "http://krieger.jhu.edu"
+  },
+  "require": {
+        "composer/installers": "~1.0"
+    }
+}
