@@ -100,3 +100,7 @@ ul.breadcrumbs {
 ul.breadcrumbs a{
 	color: #666;
 }
+
+.panel li a:hover {
+  color: #005eb8;
+}

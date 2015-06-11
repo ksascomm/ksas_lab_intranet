@@ -34,7 +34,9 @@ body {
 
 h1, h2 {
 	font-family: 'quadon', Arial, sans-serif;
-color: #005eb8;
+	color: #005eb8;
+	font-weight: 400;
+	font-style: normal;
 }
 
 h3, h4, h5, h6, .semibold {
@@ -171,6 +173,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fcfcfc', e
 
 .white {
 	color:#FFF;
+}
+
+h5.grey {
+	color: #ccc;
 }
 
 .black {

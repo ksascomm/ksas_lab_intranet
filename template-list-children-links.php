@@ -13,11 +13,16 @@ Template Name: List Children Links
 				<h2><?php the_title();?></h2>
 				<?php the_content(); ?>
 				<?php
-					$children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');
+				$parent_page = get_post($post->post_parent);
+				$parent_name = $parent_page->post_title;
+				$children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');
 					if ($children) { ?>
+					<div class="panel radius">
+					<h5 class="grey">Also in <span class="bold"><?php echo $parent_name ?></span></h5>
 						<ul>
 							<?php echo $children; ?>
 						</ul>
+					</div>
 			<?php } endwhile; endif; ?>
 			
 		</section>
