@@ -43,11 +43,11 @@
 							$collection_name = $theme_option['flagship_sub_search_collection'];
 					?>
 
-					<form method="GET" action="<?php echo site_url('/search'); ?>">
+					<form method="GET" action="<?php echo site_url('/search'); ?>" role="search">
 						<input type="submit" class="icon-search" value="&#xe004;" />
-						<input type="text" name="q" placeholder="Search this site" />
+						<label for="search" class="screen-reader-text">Search</label>
+						<input type="text" id="search" name="q" placeholder="Search this site" aria-label="search"/>
 						<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
-
 					</form>
 					</div>
 						<?php wp_nav_menu( array( 
