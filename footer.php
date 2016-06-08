@@ -14,7 +14,7 @@
 				'fallback_cb' => 'foundation_page_menu', 
 				'container' => 'nav', 
 				'container_id' => 'quicklinks',
-				'container_class' => 'three column', 
+				'container_class' => 'three columns', 
 				'walker' => new foundation_navigation() ) ); 
 			
 			//Return to current site
@@ -26,11 +26,11 @@
 				'menu_class' => 'inline-list', 
 				'fallback_cb' => 'foundation_page_menu', 
 				'container' => 'nav', 
-				'container_class' => 'seven column', 
+				'container_class' => 'seven columns', 
 				'walker' => new foundation_navigation() ) ); 
 		 ?>
 		<!-- Social Media -->
-		<nav class="two column iconfont" id="social-media">
+		<nav class="two columns iconfont" id="social-media">
 			<a href="http://facebook.com/jhuksas" title="Facebook"><span class="icon-facebook"></span></a>
 			<a href="http://vimeo.com/channels/jhuksas" title="Vimeo"><span class="icon-vimeo"></span></a>
 		</nav>
