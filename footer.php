@@ -43,7 +43,9 @@
   	</div>
 	<div class="row hide-for-print">
 		<div class="four columns centered">
-			<a href="http://www.jhu.edu"><img src="<?php echo get_template_directory_uri() ?>/assets/images/university.jpg" /></a>
+  				<a href="http://www.jhu.edu" title="Johns Hopkins University">
+  					<img src="<?php echo get_template_directory_uri() ?>/assets/images/university.jpg" / alt="Johns Hopkins University logo">
+  				</a>
 		</div>
 	</div>
   </footer>
