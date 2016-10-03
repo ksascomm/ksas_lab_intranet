@@ -8,7 +8,6 @@ Template Name: PDF Index List
 <?php locate_template('parts-nav-sidebar.php', true, false); ?>
 	<div class="nine columns wrapper radius-right offset-topgutter">
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-		<section>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<h2><?php the_title(); ?></h2>
 		<?php the_content();  endwhile; endif; ?>
@@ -27,7 +26,6 @@ Template Name: PDF Index List
 			<h5><?php the_title(); ?>&nbsp;<?php echo wp_get_attachment_link($id, 'thumbnail', 0, 0, '(Download)'); ?></h5>
 			<?php the_excerpt(); ?>
 		<?php endwhile; endif; ?>
-		</section>
 	</div>
 </div> 
 <?php get_footer(); ?>

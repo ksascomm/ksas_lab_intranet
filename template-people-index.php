@@ -28,14 +28,13 @@ Template Name: People Directory
 <?php locate_template('parts-nav-sidebar.php', true, false); ?>
 	<div class="nine columns wrapper radius-right offset-topgutter">
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-		<section>
-	<section class="row">
+	<div class="row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h2><?php the_title();?></h2>
 		<?php endwhile; endif; ?>
-	</section>
+	</div>
 	
-	<section class="row" id="fields_container">
+	<div class="row" id="fields_container">
 		<ul class="twelve columns" id="directory">
 		<?php foreach($roles as $role) {
 			$role_slug = $role->slug;
@@ -84,7 +83,7 @@ Template Name: People Directory
 				</li>		
 		<?php endwhile; endif; } wp_reset_postdata(); ?>
 		<!-- Page Content -->
-</section>
+</div>
 	<div class="row">
 		<div class="twelve columns">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();  the_content(); endwhile; endif; ?>

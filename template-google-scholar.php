@@ -8,7 +8,6 @@ Template Name: Google Scholar Page
 <?php locate_template('parts-nav-sidebar.php', true, false); ?>
 	<div class="nine columns wrapper radius-right offset-topgutter">
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-		<section>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<h2>Publications</h2>
 			<?php require_once('assets/functions/simple_html_dom.php');
@@ -34,7 +33,6 @@ Template Name: Google Scholar Page
     <?php } ?>
 <p align="right"><b><a href="<?php echo $older_pubs; ?>">View Older Publications</a></b></p>
 		<?php endwhile; endif; ?>
-		</section>
 	</div>
 </div> 
 <?php get_footer(); ?>

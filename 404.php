@@ -7,7 +7,6 @@
 <?php locate_template('parts-nav-sidebar.php', true, false); ?>
 	<div class="nine columns wrapper radius-right offset-topgutter">
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-		<section>
 			<h2>Whoops...</h2>
 			<p>This page does not exist.  Try searching</p>
        <form class="search-form" action="<?php echo site_url('/search'); ?>" method="get">
@@ -19,8 +18,6 @@
                         <input type="submit" class="button blue_bg" value="Search Again" />
                     </fieldset>
        </form>        
-
-	</section>
 </div>
 </div>
 <?php get_footer(); ?>

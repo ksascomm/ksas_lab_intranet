@@ -42,12 +42,12 @@
 		<div class="nine columns wrapper radius-right">	
 <?php } ?>
 			<!---Page Content---->
-			<section>
+			
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<h2><?php the_title();?></h2>
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>			
-			</section>
+			
 		
 			<!---News Feed---->
 		<?php 
@@ -64,7 +64,7 @@
 		<h4><?php echo $theme_option['flagship_sub_feed_name']; ?></h4>
 		<?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 		<div class="row">		
-			<section class="twelve columns">
+			<div class="twelve columns">
 					<a href="<?php the_permalink(); ?>">
 						<h6><?php the_date(); ?></h6>
 						<h5 class="black"><?php the_title();?></h5>
@@ -74,7 +74,7 @@
 						<?php the_excerpt(); ?>
 					</a>
 					<hr>
-			</section>
+			</div>
 		</div>
 		
 		<?php endwhile; ?>
