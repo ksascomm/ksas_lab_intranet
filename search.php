@@ -36,13 +36,26 @@ try {
     if ($hits > 0) {
         ?>
        <form class="search-form" action="<?php echo site_url('/search'); ?>" method="get">
-                    <fieldset>
-                        <input type="text" class="input-text" name="q" value="<?php echo $displayQuery ?>" />
-                        <label>Search:</label>
-                        <input type="radio" name="site" value="<?php echo $collection_name; ?>" checked>This site only
-                        <input type="radio" name="site" value="krieger_collection">All of JHU
-                        <input type="submit" class="button blue_bg" value="Search Again" />
-                    </fieldset>
+            <fieldset> 
+                <label>
+                    Search:
+                    <input type="text" class="input-text" name="q" value="<?php echo $displayQuery ?>" />
+                </label>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <input type="radio" name="site" id="thisSite" value="<?php echo $collection_name; ?>">
+                            <label for="thisSite">This & Related Websites</label>
+                        <input type="radio" name="site" id="krieger" value="krieger_collection">
+                            <label for="krieger">Krieger Network</label>
+                        <input type="radio" name="site" id="allJHU" value="jhuedu">
+                            <label for="allJHU">All of JHU</label>
+                    </div>   
+                </div>                    
+                <input type="submit" class="button blue_bg" id="search_again" value="Search Again" />
+                    <label for="search_again" class="screen-reader-text">
+                    Search Again
+                    </label>
+            </fieldset>
        </form>        
        <h6>Results <span class="black"><?php echo $results->getFirstResultNum() ?> - <?php echo $results->getLastResultNum() ?></span> of about <span class="black"><?php echo $hits ?></span></h6>
            
