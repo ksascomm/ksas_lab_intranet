@@ -30,7 +30,7 @@
 				'walker' => new foundation_navigation() ) ); 
 		 ?>
 		<!-- Social Media -->
-		<nav class="two columns iconfont" id="social-media">
+		<nav class="two columns">
 			<a href="http://facebook.com/jhuksas" title="Facebook"><span class="fa fa-facebook-official fa-3x"></span><span class="screen-reader-text">Facebook</span></a>
 			<a href="https://www.youtube.com/user/jhuksas" title="YouTube"><span class="fa fa-youtube-square fa-3x"></span><span class="screen-reader-text">YouTube</span></a>
 		</nav>
