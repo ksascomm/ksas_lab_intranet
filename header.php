@@ -72,7 +72,7 @@
 		</div>
 		<div class="row">
 			<div class="twelve columns hide-for-small radius10" id="logo_nav">
-				<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences">Krieger School of Arts & Sciences</a></li>
+				<li class="logo"><a href="http://krieger.jhu.edu" title="Krieger School of Arts & Sciences" target="_blank">Krieger School of Arts & Sciences</a></li>
 				
 				<a href="<?php echo site_url(); ?>"><h1 class="white"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span>
 					<?php echo get_bloginfo( 'title' ); ?></h1></a>
