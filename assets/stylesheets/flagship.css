@@ -1751,6 +1751,11 @@ body.page-id-8.site-25 section h2 {
 	.row .wrapper.nine {width: 100% !important; }
 
 }
+
+.frm_forms input[type=text].frm_verify{
+    display:none !important;
+}
+
 /*******Attributions*******/
 /* 
 Icon Set:	IcoMoon - Free -- http://keyamoon.com/icomoon/
